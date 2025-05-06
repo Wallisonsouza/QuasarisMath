@@ -123,74 +123,6 @@ export default class Mathf {
         return linear / radius;
     }
 
-    public static msToKmh(ms: number): number {
-        return ms * 3.6;
-    }
-
-    public static milesToKilometers(miles: number): number {
-        return miles * 1.60934;
-    }
-
-    public static kilometersToMiles(km: number): number {
-        return km / 1.60934;
-    }
-
-    public static celsiusToFahrenheit(celsius: number): number {
-        return (celsius * 9/5) + 32;
-    }
-
-    public static fahrenheitToCelsius(fahrenheit: number): number {
-        return (fahrenheit - 32) * 5/9;
-    }
-
-    public static celsiusToKelvin(celsius: number): number {
-        return celsius + 273.15;
-    }
-
-    public static kelvinToCelsius(kelvin: number): number {
-        return kelvin - 273.15;
-    }
-
-    public static fahrenheitToKelvin(fahrenheit: number): number {
-        return (fahrenheit - 32) * 5/9 + 273.15;
-    }
-
-    public static kelvinToFahrenheit(kelvin: number): number {
-        return (kelvin - 273.15) * 9/5 + 32;
-    }
-
-    public static metersToCentimeters(meters: number): number {
-        return meters * 100;
-    }
-
-    public static centimetersToMeters(cm: number): number {
-        return cm / 100;
-    }
-
-    public static gramsToKilograms(grams: number): number {
-        return grams / 1000;
-    }
-
-    public static kilogramsToGrams(kgs: number): number {
-        return kgs * 1000;
-    }
-
-    public static poundsToKilograms(pounds: number): number {
-        return pounds * 0.453592;
-    }
-
-    public static kilogramsToPounds(kgs: number): number {
-        return kgs / 0.453592;
-    }
-
-    public static litersToMilliliters(liters: number): number {
-        return liters * 1000;
-    }
-
-    public static millilitersToLiters(ml: number): number {
-        return ml / 1000;
-    }
-
     public static chooseTypedArray(arr: number[]): 
         Float32Array | Uint8Array | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array {
 
@@ -220,7 +152,4 @@ export default class Mathf {
             return new Int32Array(arr);
         }
     }
-
-    
-    
 }
